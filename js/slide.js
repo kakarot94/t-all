@@ -10,7 +10,7 @@ images[0] = "./images/slide1.png";
 text[0] = "You have a lot of boxes that need to be moved ? ? ?";
 
 images[1] = "./images/slide2.png";
-text[1] = "What should you do ? ? ?";
+text[1] = "What should you do ?";
 
 images[2] = "./images/slide3.png";
 text[2] =
