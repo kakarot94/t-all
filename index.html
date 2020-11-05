@@ -16,8 +16,12 @@
       </a>
       <nav>
         <ul>
-          <li><a href="#aboutUs">About</a></li>
-          <li><a href="#contactSection">Contact</a></li>
+          <li><a href="#aboutUs" id="textAbout">About</a></li>
+          <li><a href="#contactSection" id="textContact">Contact</a></li>
+          <li>
+            <button class="langBtn engBtn" onclick="setEng()"></button>
+            <button class="langBtn srbBtn" onclick="setSrb()"></button>
+          </li>
         </ul>
       </nav>
     </header>
@@ -25,10 +29,10 @@
     <section class="container" id="aboutUs">
       <div class="slider">
         <div id="slidePlaceholder"></div>
-        <p id="slideText" class="nesto"></p>
+        <p id="slideText"></p>
       </div>
       <div class="aboutText">
-        <p>
+        <p id="aboutUsP">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis qui
           autem voluptates nostrum eveniet asperiores vitae fuga illum provident
           amet perspiciatis natus unde, repellat sit? Vitae modi aliquid fugiat
@@ -45,7 +49,7 @@
         <img src="./images/userImg.png" alt="user image" class="userImage" />
         <div class="userInfo">
           <p class="name">Dusan Stamenovic</p>
-          <p class="function">vlasnik</p>
+          <p class="function" id="contactFunOne">vlasnik</p>
           <p class="phone">broj telefona</p>
         </div>
       </div>
@@ -53,20 +57,23 @@
         <img src="./images/userImg.png" alt="user image" class="userImage" />
         <div class="userInfo">
           <p class="name">Ime i prezime</p>
-          <p class="function">funkcija</p>
+          <p class="function" id="contactFunTwo">funkcija</p>
           <p class="phone">broj telefona</p>
         </div>
       </div>
     </section>
     <section id="socialNetworks">
-      <p>Follow us on Facebook &rArr;</p>
+      <p id="facePar">Follow us on Facebook</p>
+      <p>&rArr;</p>
       <a href="" class="logo facebook"></a>
       <a href="" class="logo instagram"></a>
-      <p>&lArr; Follow us on Instagram</p>
+      <p>&lArr;</p>
+      <p id="instaPar">Follow us on Instagram</p>
     </section>
     <footer>
       <p>Copyright &copy; 2010 by Kakarot Design</p>
     </footer>
     <script src="./js/slide.js"></script>
+    <script src="./js/langChanger.js"></script>
   </body>
 </html>
